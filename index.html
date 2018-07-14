@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<style>
+		.oculto{
+		    display: none !important;
+		}
+		.ajaxGif{
+		    display: block;
+		    text-align: center;
+		    margin: 0 auto;
+		    margin-bottom: .5em;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+    	 	<div class="col-sm-12 form-holder">
+        		<form action="process.php" class="demoform" method="post" id="enviarContacto">
+                    <input type="text" name="name" placeholder="Escribe tu Nombre" class="name input" required>
+                    <br>
+                    <select name="planes" class="selectForm" required>
+                        <option value="">Elige un Plan</option>
+                        <option value="Mype">MYPE (S/.499)</option>
+                        <option value="Pyme">PYME (S/.799)</option>
+                        <option value="Plus">PLUS (S/. ? )</option>
+                    </select>
+                    <br>
+                    <input type="number" name="phone" placeholder="Escribe tu Teléfono" class="phone input" required>
+                    <br>
+                    <input type="email" name="email" placeholder="Escribe tu Email" class="email input" required>
+                    <br>
+                    <select name="reunion" class="selectForm2" required>
+                        <option value="">Elige una opción</option>
+                        <option value="Solo Información">Deseo información por correo</option>
+                        <option value="Reunion En MI Oficina">Deseo Reunión Informativa en MI oficina</option>
+                        <option value="Reunion En SU Oficina">Deseo Reunión Informativa en SU oficina</option>
+                    </select>
+                    <br>
+                    <input type="hidden" name="contacto">
+                    <img src="img/ajax.gif" alt="" class="ajaxGif oculto">
+                    <button class="boton_envio">Enviar</button>
+                </form>
+        	</div>
+        </div>
+	</div>
+	<script src="js/jquery-1.11.2.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
