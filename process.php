@@ -5,7 +5,7 @@
 	$phone = stripslashes($_POST["phone"]);
 	$email = stripslashes($_POST["email"]);
 	$reunion = stripslashes($_POST["reunion"]);
-	$dest = "ventas@pwp.com";
+	$dest = "ventas2@pwp.com";
  
 		require 'phpmailer/class.phpmailer.php';
 		// Aqui definimos el asunto y armamos el cuerpo del mensaje
